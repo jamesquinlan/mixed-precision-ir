@@ -165,8 +165,8 @@ void uniform_rand_diagonally_dominant(Matrix& A, double lowerbound = 0.0, double
 
 /*
 Standard methods for generating random orthogonal matrices with Haar distribution 
-are based on the method of Heiberger (1978). With this method, an (n x n) matrix A is
-first generated with entries xij ~ Normal(0; 1). Then a QR factorization (X = QR) is computed. 
+are based on the method of Heiberger (1978). With this method, an (n x n) matrix A is
+first generated with entries xij ~ Normal(0; 1). Then a QR factorization (X = QR) is computed. 
 This method provides a random Q with correct distribution.
 */
 template<typename Matrix>
@@ -208,6 +208,7 @@ void uniform_random_orthogonal_Heiberger(Matrix& Q) {
 	std::cout << Q << std::endl;
 	std::cout << R << std::endl;
 }
+
 /*
 C.3: Generating a Random Matrix with Specified Eigenvalues
 Generate random orthogonal matrix G. W. Stewart (1980).

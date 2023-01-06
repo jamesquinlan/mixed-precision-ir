@@ -2,7 +2,7 @@ name: CMake
 
 on:
   push:
-    branches: [ dev, integration, main ]
+    branches: [ inversion, dev, integration, main ]
   pull_request:
     branches: [ integration, main ]
 

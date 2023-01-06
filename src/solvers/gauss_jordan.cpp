@@ -9,6 +9,9 @@
 * This file is part of the Mixed Precision Iterative Refinement project
 * *************************************************************************
 */
+
+#include <boost/multiprecision/cpp_bin_float.hpp>
+
 //#include <chrono>
 #include <boost/numeric/mtl/mtl.hpp>
 #include <mtl_extensions.hpp>
@@ -91,7 +94,7 @@ void GenerateNumericalAnalysisTestCase(const std::string& header, unsigned N, bo
 	Matrix Href(N, N);
 	GenerateHilbertMatrixInverse(Href);
 	Matrix I(N, N);  // H * Hinv should yield the identity matrix
-	// TODO: this is not clear that for posits this would be a fused matrix multiply
+
 	I = H * Hinv;
 
 	if (verbose) {
@@ -141,18 +144,25 @@ try {
 	using namespace mtl;
 	using namespace sw::universal;
 
+	using quad = boost::multiprecision::cpp_bin_float_quad;
+
 	unsigned N = 5; 
-	GenerateNumericalAnalysisTestCase< posit<32, 2> >("posit<32,2>", N);
-	cout << endl;
-	GenerateNumericalAnalysisTestCase< float >("IEEE single precision", N);
-	cout << endl;
+	bool Verbose = true;
+	GenerateNumericalAnalysisTestCase< quad >("IEEE quad precision", N, Verbose);
+	cout << "***********************************************************************************************\n";
+	GenerateNumericalAnalysisTestCase< posit<32, 2> >("posit<32,2>", N, Verbose);
+	cout << "***********************************************************************************************\n";
+	GenerateNumericalAnalysisTestCase< float >("IEEE single precision", N, Verbose);
+	cout << "***********************************************************************************************\n";
+/*
 	GenerateNumericalAnalysisTestCase< posit<64, 3> >("posit<64,3>", N);
 	cout << endl;
 	GenerateNumericalAnalysisTestCase< double >("IEEE double precision", N);
 	cout << endl;
 	GenerateNumericalAnalysisTestCase< posit<128, 4> >("posit<128,4>", N);
 	cout << endl;
-//	GenerateNumericalAnalysisTestCase< quad >("IEEE quad precision", N);
+	GenerateNumericalAnalysisTestCase< quad >("IEEE quad precision", N);
+*/
 
 	return EXIT_SUCCESS;
 }
