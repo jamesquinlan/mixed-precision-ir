@@ -4,7 +4,9 @@ This repo contains the code associated with the paper: "Mixed Precision Iterativ
 
 | **System** | **Status** | **More information** |
 |------------|------------|----------------------|
-| [FOSSA Status](https://app.fossa.com/projects/git%2Bgithub.com%2Fstillwater-sc%2Funiversal) | [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fstillwater-sc%2Funiversal.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fstillwater-sc%2Funiversal?ref=badge_shield) | Open-source license dependency scanner |
+| [FOSSA Status](https://app.fossa.com/projects/git%2Bgithub.com%2Fstillwater-sc%2Funiversal) | [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fstillwater-sc%2Funiversal.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fstillwater-sc%2Funiversal?ref=badge_shield) | Open-source license dependency scanner Stillwater Universal|
+| [FOSSA Status](https://app.fossa.com/projects/git%2Bgithub.com%2Fjamesquinlan%2Fmixed-precision-ir) | [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjamesquinlan%2Fmixed-precision-ir.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjamesquinlan%2Fmixed-precision-ir?ref=badge_small) | Open-source license dependency scanner Mixed-Precision IR |
+| [FOSSA Status](https://app.fossa.com/projects/git%2Bgithub.com%2Fjamesquinlan%2Fmixed-precision-ir) | [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjamesquinlan%2Fmixed-precision-ir.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjamesquinlan%2Fmixed-precision-ir?ref=badge_shield) | Open-source license dependency scanner Mixed-Precision IR |
 | [GitHub Actions](https://github.com/jamesquinlan/mixed-precision-ir/actions) | [![Build Status](https://github.com/jamesquinlan/mixed-precision-ir/actions/workflows/cmake.yml/badge.svg?branch=main)](https://github.com/jamesquinlan/mixed-precision-ir) | Latest Linux/MacOS/Windows builds and regression tests |
 
 
