@@ -96,3 +96,8 @@ To just build the projects in mixed-precision-ir and ignore build targets in Uni
 The following figure shows the project structure of this repository:
 
 ![Project Structure](img/project-structure.png)
+
+
+# Bibliography
+
+![Reference List](refs.bib)

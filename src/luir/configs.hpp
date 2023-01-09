@@ -1,6 +1,7 @@
 /** **********************************************************************
  * Configurations for multi-precision iterative refinement experiements
- *
+ *      - Global Configurations (Constants used in multiple files)
+ * 
  * @author:     James Quinlan
  * @date:       2022-12-13
  * @copyright:  Copyright (c) 2022 James Quinlan
@@ -25,6 +26,13 @@
     // High Precision (same as Working for posits - uses quire)
     constexpr unsigned hbits = 64;  
     constexpr unsigned hes   = 2;
+
+    /**
+     * Floats or Posits ?
+     * - Used during squeezing preconditioning 
+    */
+    bool usePosits = true;
+
 
     /**
      * Squeeze Selection 0, 21, 22, 24
