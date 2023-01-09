@@ -100,4 +100,4 @@ The following figure shows the project structure of this repository:
 
 # Bibliography
 
-[Reference List](refs.bib)
+[BibTeX Reference List](refs.bib)
